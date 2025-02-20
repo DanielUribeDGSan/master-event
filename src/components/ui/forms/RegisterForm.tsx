@@ -224,6 +224,7 @@ export const RegisterForm = () => {
                 Términos y condiciones
                 <a
                   href="/aviso-de-privacidad-integral-baz.pdf"
+                  target="_blank"
                   className="ml-2 d-inline-flex"
                   style={{ color: "#0000ff" }}
                 >
