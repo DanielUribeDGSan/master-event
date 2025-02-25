@@ -21,7 +21,7 @@ export const LiveArea = () => {
           <iframe
             className="responsive-iframe"
             allowFullScreen
-            src={`https://evento-banco-azteca.netlify.app/players/index.html?user=${userData.fullName}&email=${userData?.email}`}
+            src={`https://mastertalkbancoazteca.com/players/index.html?user=${userData.fullName}&email=${userData?.email}`}
           ></iframe>
         )}
       </div>
