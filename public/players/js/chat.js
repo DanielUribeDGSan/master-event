@@ -14,7 +14,7 @@ const smgM = document.getElementById("msg-movil");
 var seHizoScroll = false;
 var esMiMensaje = true;
 
-var colDocument = "azteca";
+var colDocument = "azteca3";
 
 Popper.createPopper(button, tooltip);
 Popper.createPopper(button2, tooltip);
@@ -68,24 +68,6 @@ const enviarMensajeWeb = () => {
   document.getElementById("msg-escritorio").value = "";
   document.getElementById("msg-movil").value = "";
 };
-
-if (screen.width > 768) {
-  $(document).ready(function () {
-    $("body").keyup(function (e) {
-      if (e.keyCode == 13) {
-        $("#btn-msg-web").trigger("click");
-      }
-    });
-  });
-} else {
-  $(document).ready(function () {
-    $("body").keyup(function (e) {
-      if (e.keyCode == 13) {
-        $("#btn-msg-movil").trigger("click");
-      }
-    });
-  });
-}
 
 function renderMensajes() {
   let ultimosChats = [];
@@ -209,6 +191,7 @@ function urlify(text) {
 }
 
 function registrarChats(name, email) {
+  document.getElementById("btn-msg-web").disabled = false;
   const nameStorage = name ? name : localStorage.getItem("nameDanone");
   const emailStorage = email ? email : localStorage.getItem("emailDanone");
 
@@ -248,6 +231,7 @@ function registrarChats(name, email) {
       if (result.dismiss === Swal.DismissReason.timer) {
       }
     });
+    document.getElementById("btn-msg-web").disabled = false;
     return null;
   }
   let status = "aprobado";
@@ -288,7 +272,7 @@ function registrarChats(name, email) {
                 toggle();
               }
               document.getElementById("msg-escritorio").value = "";
-
+              document.getElementById("btn-msg-web").disabled = false;
               resolve({
                 nombre: nombreValidado,
                 mensaje: mensaje,
@@ -310,6 +294,8 @@ function registrarChats(name, email) {
 }
 
 function registrarChatsM(name, email) {
+  document.getElementById("btn-msg-movil").disabled = true;
+
   const nameStorage = name ? name : localStorage.getItem("nameDanone");
   const emailStorage = email ? email : localStorage.getItem("emailDanone");
 
@@ -350,6 +336,8 @@ function registrarChatsM(name, email) {
       if (result.dismiss === Swal.DismissReason.timer) {
       }
     });
+    document.getElementById("btn-msg-movil").disabled = false;
+
     return null;
   }
 
@@ -396,6 +384,7 @@ function registrarChatsM(name, email) {
                 toggle();
               }
               document.getElementById("msg-movil").value = "";
+              document.getElementById("btn-msg-movil").disabled = false;
 
               resolve({
                 nombre: nombreValidado,
