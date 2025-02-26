@@ -163,10 +163,13 @@ export const RegisterForm = () => {
                 error={touched.post && Boolean(errors.post)}
                 helperText={touched.post && errors.post}
               >
-                <MenuItem value="Académico">Académico</MenuItem>
-                <MenuItem value="Estudiante">Estudiante</MenuItem>
-                <MenuItem value="Estudiante de posgrado">
-                  Estudiante de posgrado
+                <MenuItem value="Directivos">Directivos</MenuItem>
+                <MenuItem value="Catedráticos">Catedráticos</MenuItem>
+                <MenuItem value="Periodistas">
+                  Periodistas
+                </MenuItem>
+                <MenuItem value="Otro">
+                Otro
                 </MenuItem>
               </TextField>
             </div>

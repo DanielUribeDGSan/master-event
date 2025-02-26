@@ -114,7 +114,7 @@ export const useDanone = () => {
             html: `
             <img class="img-fluid" src="./assets/img/logos/LOGO_BAZ.png" style="margin-bottom:2rem; objet-fit: contain; " width="200" />
             <h2 class="fw-bold">Registro correcto</h2>
-            <p>¡Te esperamos a partir del 27 de febrero a partir de las 09:30 am.!</p>
+            <p>¡Te esperamos a partir del martes 11 de marzo, a partir de las 09:45 am.!</p>
             `,
             icon: undefined,
             confirmButtonText: "Aceptar",
@@ -149,7 +149,7 @@ export const useDanone = () => {
         if (!accessLogin) {
           Swal.fire({
             title: "Acceso correcto",
-            text: "¡Te esperamos a partir del 27 de de febrero!",
+            text: "¡Te esperamos a partir del martes 11 de marzo, a partir de las 09:45 am!",
             icon: "success",
             confirmButtonText: "Aceptar",
           });
