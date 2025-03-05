@@ -34,11 +34,11 @@
     />
 
     <link href="./css/colors.css" rel="stylesheet" />
-    <link href="./css/en_vivo.css?ver=1.0.21" rel="stylesheet" />
-    <link href="./css/en_vivo2.css?ver=1.0.21" rel="stylesheet" />
-    <!-- <link href="./css/loading.css?ver=1.0.21" rel="stylesheet"> -->
+    <link href="./css/en_vivo.css?ver=1.0.23" rel="stylesheet" />
+    <link href="./css/en_vivo2.css?ver=1.0.23" rel="stylesheet" />
+    <!-- <link href="./css/loading.css?ver=1.0.23" rel="stylesheet"> -->
 
-    <!-- <link href="./css/validarMovil2.css?ver=1.0.21" rel="stylesheet">  -->
+    <!-- <link href="./css/validarMovil2.css?ver=1.0.23" rel="stylesheet">  -->
 
     <!-- Alertas -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -49,8 +49,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-messaging.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
-    <script src="./js/conexion.js?ver=1.0.21"></script>
-    <script src="./js/jquery.min.js?ver=1.0.21"></script>
+    <script src="./js/conexion.js?ver=1.0.23"></script>
+    <script src="./js/jquery.min.js?ver=1.0.23"></script>
     <script>
       const setItem = () => {
         const urlParams = new URLSearchParams(window.location.search);
@@ -134,9 +134,23 @@
                       <div
                         class="w-100 d-flex align-items-center justify-content-end"
                       >
-                        <span id="regresarInicio" class="navbar-brand pointer">
+                        <span
+                          id="regresarInicio"
+                          class="navbar-brand pointer"
+                          style="
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                          "
+                        >
                           <img
                             src="./assets/img/logos/Master Talk_Logo.jpg"
+                            class="logo-header-pc"
+                            alt="bancoAzteca"
+                          />
+                          <img
+                            src="./assets/img/logos/LOGO_BAZ.png"
                             class="logo-header-pc"
                             alt="bancoAzteca"
                           />
@@ -228,9 +242,20 @@
                               <span
                                 id="regresarInicio"
                                 class="navbar-brand pointer"
+                                style="
+                                  width: 100%;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: space-between;
+                                "
                               >
                                 <img
                                   src="./assets/img/logos/Master Talk_Logo.jpg"
+                                  class="logo-header-pc"
+                                  alt="bancoAzteca"
+                                />
+                                <img
+                                  src="./assets/img/logos/LOGO_BAZ.png"
                                   class="logo-header-pc"
                                   alt="bancoAzteca"
                                 />
@@ -491,7 +516,7 @@
                                       margin-bottom: -20px;
                                     "
                                   >
-                                    <div class="simplebar-content">
+                                    <!-- <div class="simplebar-content">
                                       <div
                                         class="chat-scrollable-area__message-container tw-flex-grow-1 tw-pd-b-1"
                                         data-test-selector="chat-scrollable-area__message-container"
@@ -510,7 +535,7 @@
                                           id="list-message2"
                                         ></div>
                                       </div>
-                                    </div>
+                                    </div> -->
                                   </div>
                                 </div>
                               </div>
@@ -524,7 +549,7 @@
                               <div class="___class_+?110___"></div>
                               <div>
                                 <div class="tw-block tw-relative tw-z-default">
-                                  <div
+                                  <!-- <div
                                     class="chat-input-tray__open bg-input chat-input-tray__open--persistent tw-block tw-border-b tw-border-l tw-border-r tw-border-radius-large tw-border-t tw-c-background-alt tw-elevation-0 tw-left-0 tw-pd-0 tw-relative tw-right-0 tw-z-below"
                                   >
                                     <div
@@ -577,8 +602,8 @@
                                         </div>
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="___class_+?122___">
+                                  </div> -->
+                                  <!-- <div class="___class_+?122___">
                                     <div
                                       class="tw-block tw-border-radius-large tw-elevation-0 tw-left-0 tw-pd-0 tw-right-0 tw-z-below"
                                     ></div>
@@ -647,7 +672,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                  </div>
+                                  </div> -->
                                 </div>
                                 <div
                                   class="chat-input__buttons-container tw-flex tw-justify-content-between tw-mg-t-1"
@@ -705,7 +730,7 @@
                                             ></div>
                                           </div>
 
-                                          <button
+                                          <!-- <button
                                             class="ScCoreButton-sc-1qn4ixc-0 ScCoreButtonPrimary-sc-1qn4ixc-1 jeBpig tw-core-button"
                                             id="btn-msg-movil"
                                             onclick="registrarChatsM(getParamValue('user'), getParamValue('email'))"
@@ -720,7 +745,7 @@
                                                 Enviar
                                               </div>
                                             </div>
-                                          </button>
+                                          </button> -->
                                           <button
                                             class="ScCoreButton-sc-1qn4ixc-0 ScCoreButtonPrimary-sc-1qn4ixc-1 jeBpig tw-core-button mr-2 w-auto px-2"
                                             id="btn-msg-web-1"
@@ -1009,7 +1034,7 @@
                                     margin-bottom: -20px;
                                   "
                                 >
-                                  <div class="simplebar-content">
+                                  <!-- <div class="simplebar-content">
                                     <div
                                       class="chat-scrollable-area__message-container tw-flex-grow-1 tw-pd-b-1"
                                       data-test-selector="chat-scrollable-area__message-container"
@@ -1029,7 +1054,7 @@
                                         id="list-message"
                                       ></div>
                                     </div>
-                                  </div>
+                                  </div> -->
                                 </div>
                               </div>
                             </div>
@@ -1041,7 +1066,7 @@
                             <div class="___class_+?261___"></div>
                             <div>
                               <div class="tw-block tw-relative tw-z-default">
-                                <div
+                                <!-- <div
                                   class="chat-input-tray__open bg-input chat-input-tray__open--persistent tw-block tw-border-b tw-border-l tw-border-r tw-border-radius-large tw-border-t tw-c-background-alt tw-elevation-0 tw-left-0 tw-pd-0 tw-relative tw-right-0 tw-z-below"
                                 >
                                   <div
@@ -1094,8 +1119,8 @@
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="___class_+?273___">
+                                </div> -->
+                                <!-- <div class="___class_+?273___">
                                   <div
                                     class="tw-block tw-border-radius-large tw-elevation-0 tw-left-0 tw-pd-0 tw-right-0 tw-z-below"
                                   ></div>
@@ -1162,7 +1187,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                                </div> -->
                               </div>
                               <div
                                 class="chat-input__buttons-container tw-flex tw-justify-content-between tw-mg-t-1"
@@ -1218,7 +1243,7 @@
                                             "
                                           ></div>
                                         </div>
-                                        <div>
+                                        <!-- <div>
                                           <button
                                             class="ScCoreButton-sc-1qn4ixc-0 ScCoreButtonPrimary-sc-1qn4ixc-1 jeBpig tw-core-button"
                                             id="btn-msg-web"
@@ -1235,7 +1260,7 @@
                                               </div>
                                             </div>
                                           </button>
-                                        </div>
+                                        </div> -->
                                         <button
                                           class="ScCoreButton-sc-1qn4ixc-0 ScCoreButtonPrimary-sc-1qn4ixc-1 jeBpig tw-core-button mr-2 w-auto px-2"
                                           id="btn-msg-web-2"
@@ -1633,15 +1658,15 @@
     <!-- Modales  --->
     <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}" />
     <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-    <script src="./js/bootstrap.bundle.min.js?ver=1.0.21"></script>
+    <script src="./js/bootstrap.bundle.min.js?ver=1.0.23"></script>
     <!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
-    <!--<script type="text/javascript" src="js/validarRuta.js?ver=1.0.21"></script>-->
+    <!--<script type="text/javascript" src="js/validarRuta.js?ver=1.0.23"></script>-->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script
       type="module"
       src="https://unpkg.com/emoji-picker-element@1"
     ></script>
-    <script type="text/javascript" src="./js/chat.js?ver=1.0.21"></script>
-    <!-- <script type="text/javascript" src="./js/loading.js?ver=1.0.21"></script>  -->
+    <script type="text/javascript" src="./js/chat.js?ver=1.0.23"></script>
+    <!-- <script type="text/javascript" src="./js/loading.js?ver=1.0.23"></script>  -->
   </body>
 </html>
